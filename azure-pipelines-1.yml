@@ -20,3 +20,9 @@ steps:
   inputs:
     command: 'install'
 
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: 'Azure_devops/package.json'
+    customCommand: 'npm run build -prod'
+
