@@ -19,5 +19,5 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
-    workingDir: '$(Build.SourcesDirectory)/package.json'
+    workingDir: '$(Build.SourcesDirectory)/Sabarish1241/Azure_devops/package.json'
 
