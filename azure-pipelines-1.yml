@@ -10,18 +10,19 @@ pool:
   vmImage: windows-latest
 
 steps:
+
+#- task: NodeTool@0
+#  inputs:
+#    versionSpec: '10.x'
+#  displayName: 'Install Node.js'
+
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+    versionSpec: '14.x'
+    checkLatest: true
 
 - task: Npm@1
   inputs:
-    command: 'install'
+    command: 'custom'
     workingDir: '$(Build.SourcesDirectory)'
- 
-- task: Npm@1
-  inputs:
-    command: 'install'
-    workingDir: '$(Build.SourcesDirectory)/Sabarish1241/Azure_devops/package.json'
-
+    customCommand: 'nginstall'
