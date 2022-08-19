@@ -6,6 +6,7 @@
      "test": "npm run tests",
      "build": "npm run build -prod",
      "install": "npm install"
+     "nginstall": "npm install -g @angular/cli"
    },
    "private": true,
    "dependencies": {
