@@ -22,15 +22,15 @@ steps:
     checkLatest: true
 
 
-- task: Npm@1
-  inputs:
-    command: 'install'
-    workingDir: '$(Build.SourcesDirectory)'
+#- task: Npm@1
+#  inputs:
+#    command: 'install'
+#    workingDir: '$(Build.SourcesDirectory)'
 - task: Npm@1
   inputs:
     command: 'custom'
     workingDir: '$(Build.SourcesDirectory)'
-    customCommand: 'build'
+    customCommand: 'build-prod'
 #- task: Npm@1
 #  inputs:
 #    command: 'custom'
