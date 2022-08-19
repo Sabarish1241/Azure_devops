@@ -30,7 +30,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(Build.SourcesDirectory)'
-    customCommand: 'build-prod'
+    customCommand: 'build:prod'
 #- task: Npm@1
 #  inputs:
 #    command: 'custom'
