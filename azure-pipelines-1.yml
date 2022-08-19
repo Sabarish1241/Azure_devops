@@ -26,10 +26,11 @@ steps:
     command: 'custom'
     workingDir: '$(Build.SourcesDirectory)'
     customCommand: 'install -g @angular/cli'
-#- task: Npm@1
-#  inputs:
-#    command: 'install'
-#    workingDir: '$(Build.SourcesDirectory)'
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '$(Build.SourcesDirectory)'
+
 - task: Npm@1
   inputs:
     command: 'custom'
