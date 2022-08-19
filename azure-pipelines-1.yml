@@ -25,4 +25,4 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(Build.SourcesDirectory)'
-    customCommand: 'nginstall'
+    customCommand: 'run nginstall'
