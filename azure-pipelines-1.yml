@@ -26,6 +26,11 @@ steps:
   inputs:
     command: 'install'
     workingDir: '$(Build.SourcesDirectory)'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(Build.SourcesDirectory)'
+    customCommand: 'build'
 #- task: Npm@1
 #  inputs:
 #    command: 'custom'
