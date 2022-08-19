@@ -21,8 +21,13 @@ steps:
     versionSpec: '14.x'
     checkLatest: true
 
+
 - task: Npm@1
   inputs:
-    command: 'custom'
+    command: 'install'
     workingDir: '$(Build.SourcesDirectory)'
-    customCommand: 'build-production'
+#- task: Npm@1
+#  inputs:
+#    command: 'custom'
+#    workingDir: '$(Build.SourcesDirectory)'
+#    customCommand: 'build-production'
