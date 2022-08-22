@@ -1,0 +1,17 @@
+{
+   "name": "sample_node_project",
+   "version": "0.0.0",
+   "scripts": {
+     "npm": "npm",
+     "test": "npm run tests",
+     "build": "npm run build-prod",
+     "install": "npm install"
+   },
+   "private": true,
+   "dependencies": {
+     "bootstrap": "^4.4.1",
+     "primeng": "^8.0.0"
+   }
+
+   
+}
